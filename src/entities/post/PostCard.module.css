@@ -1,0 +1,29 @@
+.post_content {
+    width: 15em;
+    min-height: 7em;
+    max-height: 10em;
+    padding: 0 10px;
+    margin: 10px;
+    border: 2px solid #1E1E1E;
+    border-radius: 25px;
+    word-break: break-all;
+    background-color: #1E1E1E;
+    transition: scale .3s ease-in-out;
+}
+
+.post_content:hover {
+    cursor: pointer;
+    scale: 1.05;
+    background-image: linear-gradient(to right top, #e185f4, #ff71b4, #ff8a61, #ffbe00, #a8eb12);
+}
+
+.post_content__title {
+    margin: 20px 0 0 0 ;
+    color: aliceblue;
+}
+
+.post_content__body {
+    margin: 1em 0;
+    display: flex;
+    color: rgba(240, 255, 255, 0.5);
+}
