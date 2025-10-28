@@ -1,0 +1,16 @@
+.my_button {
+    margin: 0 1em;
+    padding: 1em;
+    width: 10em;
+    max-width: 15em;
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: #1E1E1E;
+    transition: scale .1s ease-in-out;
+}
+
+.my_button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
