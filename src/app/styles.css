@@ -2,8 +2,48 @@
     box-sizing: border-box;
 }
 
+:root {
+    /*BODY THEME*/
+    --body-bg-color: #eff0f1;
+    --body-text-color: black;
+
+    /*HEADER THEME*/
+    --header-bg-color: white;
+    --header-bg-shadow: rgba(17, 17, 17, 0.3);
+
+    /*POST CARD THEME*/
+    --post-card-bg-color: #1E1E1E;
+    --post-card-text-color: aliceblue;
+
+    /*OTHER*/
+    --usual-span: rgba(30, 30, 30, 0.5);
+    --border-color: #1E1E1E;
+}
+
+body[data-theme='dark'] {
+    /*BODY THEME*/
+    --body-bg-color: #121212;
+    --body-text-color: aliceblue;
+
+    /*HEADER THEME*/
+    --header-bg-color: #1E1E1E;
+    --header-bg-shadow: rgba(210, 210, 210, 0.3);
+
+    /*POST CARD THEME*/
+    --post-card-bg-color: #1E1E1E;
+    --post-card-text-color: aliceblue;
+
+    /*OTHER*/
+    --usual-span: rgba(225, 225, 225, 0.5);
+    --border-color: aliceblue;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: "Courier New";
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
+    transition: background-color .3s ease, color .3s ease;
+    height: 100%;
 }
