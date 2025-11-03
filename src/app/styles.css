@@ -15,6 +15,10 @@
     --post-card-bg-color: #1E1E1E;
     --post-card-text-color: aliceblue;
 
+    /*COMMENTS THEME*/
+    --comment-card-bg-color: white;
+    --comment-card-text-color: aliceblue;
+
     /*OTHER*/
     --usual-span: rgba(30, 30, 30, 0.5);
     --border-color: #1E1E1E;
