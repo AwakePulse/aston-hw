@@ -5,6 +5,40 @@
     align-items: center;
 }
 
+.head_block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+.head_block select {
+    position: absolute;
+    right: 0%;
+    padding: 8px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    max-width: 15em;
+    color: aliceblue;
+    text-align: center;
+    background-color: #1E1E1E;
+    cursor: pointer;
+    font-size: 15px;
+    transition: scale .1s ease-in-out;
+
+    appearance: none;
+}
+
+.head_block select:hover {
+    scale: 1.1;
+}
+
+.head_block select:focus {
+    outline: none;
+}
+
 .posts_elem {
     display: flex;
     flex-direction: row;

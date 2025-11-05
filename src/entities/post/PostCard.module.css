@@ -1,14 +1,20 @@
+.post {
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+}
+
 .post_content {
     width: 15em;
     min-height: 7em;
-    max-height: 10em;
-    padding: 0 10px;
+    max-height: 100em;
     margin: 10px;
     border: 2px solid var(--border-color);
     border-radius: 25px;
     word-break: break-all;
     background-color: var(--post-card-bg-color);
     transition: scale .3s ease-in-out;
+    overflow: hidden;
 }
 
 .post_content:hover {
@@ -18,11 +24,13 @@
 }
 
 .post_content__title {
+    padding: 0 10px;
     margin: 20px 0 0 0 ;
     color: var(--post-card-text-color);
 }
 
 .post_content__body {
+    padding: 0 10px;
     margin: 1em 0;
     display: flex;
     color: rgba(240, 255, 255, 0.5);

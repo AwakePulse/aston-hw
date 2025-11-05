@@ -25,7 +25,15 @@ const Header = () => {
             </section>
             {open && (
                 <Modal onClose={onClose}>
-                    <AboutModal/>
+                    <div>
+                        <Modal.Header>О нас</Modal.Header>
+                        <Modal.Body>
+                            <AboutModal/>
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <Button onClick={onClose}>Close</Button>
+                        </Modal.Footer>
+                    </div>
                 </Modal>
             )}
         </header>

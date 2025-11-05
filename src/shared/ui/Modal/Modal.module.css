@@ -1,3 +1,5 @@
+
+/*MAIN MODAL STYLES*/
 .modal {
     position: fixed;
     top: 0;
@@ -5,7 +7,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+    z-index: 9;
 }
 
 .modal_container {
@@ -20,7 +22,7 @@
     border: 2px solid #1E1E1E;
     border-radius: 15px;
     background-color: var(--body-bg-color);
-    z-index: 2;
+    z-index: 10;
 }
 
 .modal_close {
@@ -28,3 +30,10 @@
     justify-content: flex-end;
     margin: 10px 0 0 0;
 }
+
+/*MODAL CONTENT STYLES*/
+.content_header {
+    text-align: center;
+    margin: 0;
+}
+
