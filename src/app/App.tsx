@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import PostList from "../widgets/PostList/PostList";
 import {Post} from "../entities/post/Post.types.ts";
+import Header from "../widgets/LayoutHeader/Header";
 
 const App = () => {
     const [posts, setPosts] = useState<Post[]>([
@@ -12,7 +13,10 @@ const App = () => {
     ])
 
     return (
-        <PostList posts={posts} />
+        <>
+            <Header></Header>
+            <PostList posts={posts} />
+        </>
     );
 };
 
