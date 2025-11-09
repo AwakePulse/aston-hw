@@ -1,0 +1,10 @@
+.photos_component {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.photos_component button {
+    margin: 15px;
+}

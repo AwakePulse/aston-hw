@@ -1,0 +1,44 @@
+.album_content {
+    display: flex;
+    position: relative;
+    margin: 10px 5px;
+    padding: 2em;
+    border-left: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 15px;
+    max-width: 15vw;
+    max-height: 25vh;
+    word-break: break-word;
+    background: var(--post-card-bg-color);
+    color: var(--user-card-text-color);
+    text-align: center;
+    transition: scale .3s ease-in-out;
+    cursor: pointer;
+}
+
+.album_content::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 85% 50%;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 10px;
+    background: #363636;
+    z-index: 1;
+}
+
+.album_content::after {
+    content: '';
+    position: absolute;
+    inset: 0 20% 95% 2%;
+    border-top-left-radius: 14px;
+    background: #363636;
+    z-index: 1;
+}
+
+.album_content:hover {
+    scale: 1.05;
+}
+
+.album_content__title {
+    color: var(--post-card-text-color);
+}

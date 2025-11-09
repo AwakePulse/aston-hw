@@ -1,0 +1,36 @@
+.user {
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+}
+
+.user_content {
+    width: 20em;
+    height: 5em;
+    margin: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    word-break: break-all;
+    background-color: var(--user-card-bg-color);
+    transition: scale .3s ease-in-out;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.user_content:hover {
+    cursor: pointer;
+    scale: 1.05;
+    background-image: linear-gradient(to right top, #18e0e3, #56e8cd, #86efb6, #b4f2a1, #e0f393);
+}
+
+.user_content__username {
+    padding: 0 10px;
+    margin: 5px 0 0 0 ;
+    color: var(--user-card-text-color);
+}
+
+.user_content__name {
+    padding: 0 10px;
+    margin: 5px 0 0 0 ;
+    color: var(--user-card-span-color);
+}

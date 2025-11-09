@@ -7,6 +7,10 @@
     --body-bg-color: #eff0f1;
     --body-text-color: black;
 
+    /*MAIN ENTITIES THEME*/
+    --main-bg-color: #1E1E1E;
+    --main-text-color: aliceblue;
+
     /*HEADER THEME*/
     --header-bg-color: white;
     --header-bg-shadow: rgba(17, 17, 17, 0.3);
@@ -19,6 +23,16 @@
     --comment-card-bg-color: white;
     --comment-card-text-color: aliceblue;
 
+    /*USER CARD THEME*/
+    --user-card-bg-color: #1E1E1E;
+    --user-card-text-color: aliceblue;
+    --user-card-span-color: rgba(240, 248, 255, 0.5);
+
+    /*TABS THEME*/
+    --tabs-before-bg-color: rgba(255, 255, 255, 0.6);
+    --tabs-after-bg-color: rgba(255, 255, 255, 0.9);
+    --tabs-text-color: #1E1E1E;
+
     /*OTHER*/
     --usual-span: rgba(30, 30, 30, 0.5);
     --border-color: #1E1E1E;
@@ -29,6 +43,10 @@ body[data-theme='dark'] {
     --body-bg-color: #121212;
     --body-text-color: aliceblue;
 
+    /*MAIN ENTITIES THEME*/
+    --main-bg-color: #1E1E1E;
+    --main-text-color: aliceblue;
+
     /*HEADER THEME*/
     --header-bg-color: #1E1E1E;
     --header-bg-shadow: rgba(210, 210, 210, 0.3);
@@ -36,6 +54,16 @@ body[data-theme='dark'] {
     /*POST CARD THEME*/
     --post-card-bg-color: #1E1E1E;
     --post-card-text-color: aliceblue;
+
+    /*USER CARD THEME*/
+    --user-card-bg-color: #1E1E1E;
+    --user-card-text-color: aliceblue;
+    --user-card-span-color: rgba(240, 248, 255, 0.5);
+
+    /*TABS THEME*/
+    --tabs-before-bg-color: rgba(0, 0, 0, 0.6);
+    --tabs-after-bg-color: rgba(0, 0, 0, 0.9);
+    --tabs-text-color: white;
 
     /*OTHER*/
     --usual-span: rgba(225, 225, 225, 0.5);
@@ -49,5 +77,9 @@ html, body {
     background-color: var(--body-bg-color);
     color: var(--body-text-color);
     transition: background-color .3s ease, color .3s ease;
-    height: 100%;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none !important;
 }

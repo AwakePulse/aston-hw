@@ -1,0 +1,7 @@
+.albums_elem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
