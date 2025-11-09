@@ -1,0 +1,37 @@
+.user_container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    width: 40vw;
+    max-width: 60vw;
+    padding: 10px 20px;
+    background: var(--user-card-bg-color);
+    color: var(--user-card-text-color);
+    transition: scale .3s ease;
+}
+
+.user_container h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.user_container span {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: var(--user-card-span-color);
+}
+
+.user_container p {
+    text-align: end;
+}
+
+.user_container:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.user_container:active {
+    scale: 0.95;
+}

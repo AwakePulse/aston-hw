@@ -1,0 +1,34 @@
+.tabs_menu {
+    display: flex;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    height: 5vh;
+    width: 25vw;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--user-card-bg-color);
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.tabs_menu::before {
+    content: '';
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 25px;
+    inset: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tabs_link {
+    color: white;
+    z-index: 1;
+    font-weight: bolder;
+}
+
+.active {
+    background: white;
+    border-radius: 15px;
+    padding: 2px 15px;
+    color: black;
+}

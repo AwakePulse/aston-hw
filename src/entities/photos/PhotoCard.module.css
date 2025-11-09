@@ -1,0 +1,56 @@
+.photo_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: scale .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.photo_content:hover {
+    scale: 1.05;
+    background: var(--tabs-after-bg-color);
+}
+
+.photo_image {
+    position: relative;
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    width: 15vw;
+    height: 20vh;
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 5px 10px;
+}
+
+.photo_text_block {
+    position: relative;
+    display: flex;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 15vw;
+    width: 15vw;
+    height: 8vh;
+}
+
+.photo_text_block::before {
+    content: '';
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 18px;
+    inset: 0;
+    transition: opacity 0.3s ease;
+}

@@ -1,0 +1,28 @@
+.post_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.post_content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    padding: 10px;
+    background: var(--post-card-bg-color);
+    color: var(--post-card-text-color);
+    margin: 20px 0;
+    transition: scale .3s ease-in-out;
+}
+
+.post_content:hover {
+    scale: 1.05;
+}
+
+.post_content p {
+    color: var(--user-card-span-color);
+}

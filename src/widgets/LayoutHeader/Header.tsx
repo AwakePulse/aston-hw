@@ -4,6 +4,7 @@ import styles from './Header.module.css';
 import Modal from "../../shared/ui/Modal/Modal";
 import AboutModal from "../../shared/ui/Modal/views/AboutModal.tsx";
 import ThemeSwitcher from "../../features/ThemeSwitcher/ui/ThemeSwitcher.tsx";
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -18,7 +19,9 @@ const Header = () => {
 
     return (
         <header className={styles.header_content}>
-            <h1>ASTON</h1>
+            <h1 className={styles.company_title}>
+                <NavLink to={'/'}>ASTON</NavLink>
+            </h1>
             <section>
                 <Button onClick={onOpen}>About us</Button>
                 <ThemeSwitcher />

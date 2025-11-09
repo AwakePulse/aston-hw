@@ -1,4 +1,7 @@
 .comments_content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: absolute;
     top: 100%;
     left: 0;
