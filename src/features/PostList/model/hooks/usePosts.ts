@@ -1,4 +1,4 @@
-import {useGetPostsQuery} from "../../../../shared/api/mainApi.ts";
+import {useGetPostsQuery} from "../../../../entities/post/api/postsApi.ts";
 
 export const usePosts = (limit) => {
     const { data, isLoading, error } = useGetPostsQuery(limit);

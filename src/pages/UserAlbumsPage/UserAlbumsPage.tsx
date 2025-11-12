@@ -1,12 +1,13 @@
 import React from 'react';
 import {useParams} from "react-router-dom";
-import {useGetUserAlbumsQuery, useGetUserPostsQuery} from "../../shared/api/mainApi.ts";
+import {useGetUserAlbumsQuery} from "../../entities/user/api/usersApi.ts";
 import Loader from "../../shared/ui/Loader/Loader.tsx";
 import AlbumCard from "../../entities/albums/ui/AlbumCard.tsx";
 import styles from './UserAlbumsPage.module.css';
 import {withUserDataPage} from "../../shared/lib/hoc/withUserDataPage.tsx";
 import {Post} from "../../entities/post/Post.types.ts";
 import PostCard from "../../entities/post/ui/PostCard.tsx";
+import {Album} from "../../entities/albums/Albums.types.ts";
 
 // const UserAlbumsPage = () => {
 //     const { id } = useParams<{id: string}>();
@@ -23,7 +24,7 @@ import PostCard from "../../entities/post/ui/PostCard.tsx";
 //     );
 // };
 
-export default withUserDataPage<Post>({
+export default withUserDataPage<Album>({
     useQueryHook: useGetUserAlbumsQuery,
     ItemComponent: ({item}) => <AlbumCard album={item}/>,
     className: styles.albums_elem,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useGetUserPostsQuery} from "../../shared/api/mainApi.ts";
+import {useGetUserPostsQuery} from "../../entities/user/api/usersApi.ts";
 import styles from "./UserPostsPage.module.css";
 import PostCard from "../../entities/post/ui/PostCard.tsx";
 import {withUserDataPage} from "../../shared/lib/hoc/withUserDataPage.tsx";

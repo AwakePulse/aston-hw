@@ -1,17 +1,19 @@
 import React from 'react';
-import {useLocation, useParams} from "react-router-dom";
-import {useGetPostsByIdQuery} from "../../shared/api/mainApi.ts";
+import {useParams} from "react-router-dom";
+import {useGetPostsByIdQuery} from "../../entities/post/api/postsApi.ts";
 import styles from './PostPage.module.css';
+import {useSelector} from "react-redux";
+import {RootState} from "../../app/providers/store";
+import {postsSelectors} from "../../entities/post/model/slice/postSlice.ts";
 
 const PostPage: React.FC = () => {
-    const location = useLocation();
     const { id } = useParams<{id: string}>();
-    const statePost = location.state?.post;
+    const userFromStore = useSelector((state: RootState) => postsSelectors.selectById(state, Number(id)));
     const {data: fetchedPost, error} = useGetPostsByIdQuery(Number(id), {
-        skip: !!statePost,
+        skip: !!userFromStore,
     });
 
-    const post = statePost ?? fetchedPost;
+    const post = userFromStore ?? fetchedPost;
 
     if(error || !post) return <p>Post is not exist!</p>;
 
