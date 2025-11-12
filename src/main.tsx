@@ -2,7 +2,6 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux'
-import App from './app/App.tsx';
 import './app/styles.css';
 import { ThemeProvider } from "./shared/lib/theme/ThemeContext.tsx";
 import {store} from "./app/providers/store";

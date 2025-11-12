@@ -1,4 +1,4 @@
-import {useGetUsersQuery} from "../../../../shared/api/mainApi.ts";
+import {useGetUsersQuery} from "../../../../entities/user/api/usersApi.ts";
 
 export const useUsers = (limit) => {
     const { data, isLoading, error } = useGetUsersQuery(limit);

@@ -1,7 +1,8 @@
 .comments_content {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 100%;
     left: 0;
@@ -15,7 +16,11 @@
     word-break: break-all;
     background-color: var(--post-card-bg-color);
     overflow: hidden;
-    z-index: 2;
+    z-index: 1;
+}
+
+.comments_content p {
+    color: var(--comment-card-text-color);
 }
 
 .comment_content {

@@ -1,8 +1,6 @@
-export interface CommentType {
-    id: number;
-    text: string;
-}
+import {Comment} from "../../entities/comment/Comment.types.ts";
 
 export interface CommentListProp {
-    comments: CommentType[];
+    comments: Comment[];
+    isLoading: boolean;
 }
