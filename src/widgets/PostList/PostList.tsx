@@ -1,10 +1,12 @@
-import React, {useCallback, useState} from 'react';
+import React, {PropsWithChildren, useCallback, useState} from 'react';
 import PostCard from "../../entities/post/ui/PostCard.tsx";
 import {PostListProp} from "./PostList.types.ts";
 import styles from './PostList.module.css';
 import PostLengthFilter from "../../features/PostLengthFilter/ui/PostLengthFilter.tsx";
+import {ItemList} from "../../shared/ui/ItemList/ItemList.tsx";
+import {Post} from "../../entities/post/model/Post.types.ts";
 
-const PostList: React.FC<PostListProp> = ({posts = [], selectedFilter, onFilterChange}: PostListProp) => {
+const PostList = ({posts = [], selectedFilter, onFilterChange}: PropsWithChildren<PostListProp>) => {
     const [openedPostId, setOpenedPostId] = useState<number | null>(null);
 
     const handlerToggle = useCallback((id: number) => {
@@ -24,14 +26,23 @@ const PostList: React.FC<PostListProp> = ({posts = [], selectedFilter, onFilterC
                 </PostLengthFilter>
             </div>
             <div className={styles.posts_elem}>
-                {posts?.map(post =>
-                    <PostCard
-                        key={post.id}
-                        post={post}
-                        isOpen={openedPostId === post.id}
-                        onToggle={() => handlerToggle(post.id)}
-                    />
-                )}
+                {/*{posts?.map(post =>*/}
+                {/*    <PostCard*/}
+                {/*        key={post.id}*/}
+                {/*        post={post}*/}
+                {/*        isOpen={openedPostId === post.id}*/}
+                {/*        onToggle={() => handlerToggle(post.id)}*/}
+                {/*    />*/}
+                {/*)}*/}
+                <ItemList
+                    items={posts}
+                    renderItem={(post: Post) => (
+                        <PostCard
+                            key={post.id}
+                            post={post}
+                            isOpen={openedPostId === post.id}
+                            onToggle={() => handlerToggle(post.id)} />
+                    )} />
             </div>
         </div>
     );

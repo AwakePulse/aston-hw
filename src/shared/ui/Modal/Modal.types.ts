@@ -1,4 +1,4 @@
-type ModalTypes = {
+export type ModalTypes = {
     children: React.ReactNode;
     onClose: () => void;
 }

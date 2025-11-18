@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
 import styles from './InlineButton.module.css';
 import {InlineButtonTypes} from "./InlineButton.types.ts";
 
-const InlineButton: React.FC<InlineButtonTypes> = ({children, onClick}) => {
+const InlineButton = ({children, onClick}: PropsWithChildren<InlineButtonTypes>) => {
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         e.stopPropagation();

@@ -5,9 +5,9 @@ import Loader from "../../shared/ui/Loader/Loader.tsx";
 import AlbumCard from "../../entities/albums/ui/AlbumCard.tsx";
 import styles from './UserAlbumsPage.module.css';
 import {withUserDataPage} from "../../shared/lib/hoc/withUserDataPage.tsx";
-import {Post} from "../../entities/post/Post.types.ts";
+import {Post} from "../../entities/post/model/Post.types.ts";
 import PostCard from "../../entities/post/ui/PostCard.tsx";
-import {Album} from "../../entities/albums/Albums.types.ts";
+import {Album} from "../../entities/albums/model/Albums.types.ts";
 
 // const UserAlbumsPage = () => {
 //     const { id } = useParams<{id: string}>();

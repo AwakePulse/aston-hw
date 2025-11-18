@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './UserInfo.module.css';
-import {User} from "../../entities/user/User.types.ts";
+import {User} from "../../entities/user/model/User.types.ts";
 
 const UserInfo: React.FC = ({user}: {user: User}) => {
     return (

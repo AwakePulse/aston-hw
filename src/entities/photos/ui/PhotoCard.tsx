@@ -1,5 +1,5 @@
 import React from 'react';
-import {Photo} from "../Photo.types.ts";
+import {Photo} from "../model/Photo.types.ts";
 import styles from '../PhotoCard.module.css';
 
 const PhotoCard: React.FC = ({photo}: {photo: Photo}) => {

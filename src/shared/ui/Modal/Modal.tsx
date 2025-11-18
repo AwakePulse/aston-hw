@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
 import styles from './Modal.module.css'
 import {createPortal} from "react-dom";
+import {ModalTypes} from "./Modal.types.ts";
 
-function Modal({ children, onClose }: ModalTypes) {
+function Modal({ children, onClose }: PropsWithChildren<ModalTypes>) {
     const portalRoot = document.getElementById('modal-root');
     if(!portalRoot) return null;
 

@@ -3,7 +3,7 @@ import {useGetUserPostsQuery} from "../../entities/user/api/usersApi.ts";
 import styles from "./UserPostsPage.module.css";
 import PostCard from "../../entities/post/ui/PostCard.tsx";
 import {withUserDataPage} from "../../shared/lib/hoc/withUserDataPage.tsx";
-import {Post} from "../../entities/post/Post.types.ts";
+import {Post} from "../../entities/post/model/Post.types.ts";
 
 // const UserPostsPage = () => {
 //     const { id } = useParams<{id: string}>();

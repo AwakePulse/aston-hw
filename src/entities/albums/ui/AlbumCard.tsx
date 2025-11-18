@@ -1,5 +1,5 @@
 import React from 'react';
-import {Album} from "../Albums.types.ts";
+import {Album} from "../model/Albums.types.ts";
 import styles from '../AlbumCard.module.css';
 import {NavLink} from "react-router-dom";
 

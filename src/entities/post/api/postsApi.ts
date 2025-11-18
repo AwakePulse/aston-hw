@@ -1,5 +1,5 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
-import {Post} from "../Post.types.ts";
+import {Post} from "../model/Post.types.ts";
 import {setPosts} from "../model/slice/postSlice.ts";
 
 export const postsApi = createApi({
