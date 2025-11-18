@@ -1,5 +1,5 @@
 import {createEntityAdapter, createSlice} from "@reduxjs/toolkit";
-import {Post} from "../../Post.types.ts";
+import {Post} from "../Post.types.ts";
 import {RootState} from "../../../../app/providers/store";
 
 

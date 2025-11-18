@@ -1,5 +1,5 @@
 import React, {useCallback, useState} from 'react';
-import {User} from "../User.types.ts";
+import {User} from "../model/User.types.ts";
 import styles from '../UserCard.module.css';
 import {NavLink} from "react-router-dom";
 

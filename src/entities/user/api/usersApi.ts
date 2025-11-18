@@ -1,8 +1,8 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
-import {User} from "../User.types.ts";
-import {Post} from "../../post/Post.types.ts";
-import {Album} from "../../albums/Albums.types.ts";
-import {Todo} from "../../todos/Todos.types.ts";
+import {User} from "../model/User.types.ts";
+import {Post} from "../../post/model/Post.types.ts";
+import {Album} from "../../albums/model/Albums.types.ts";
+import {Todo} from "../../todos/model/Todos.types.ts";
 import {setUsers} from "../model/slice/userSlice.ts";
 
 export const usersApi = createApi({

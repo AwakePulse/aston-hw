@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
 import {CommentListProp} from "../CommentList.types.ts";
 import styles from '../CommentList.module.css';
-import Loader from "../../../shared/ui/Loader/Loader.tsx";
 
-const CommentList: React.FC<CommentListProp> = ({comments, isLoading}) => {
+const CommentList = ({comments, isLoading}: PropsWithChildren<CommentListProp>) => {
     return (
         <div className={styles.comments_content} onClick={(e) => e.preventDefault()}>
             {isLoading

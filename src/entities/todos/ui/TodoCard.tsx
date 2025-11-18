@@ -1,5 +1,5 @@
 import React from 'react';
-import {Todo} from "../Todos.types.ts";
+import {Todo} from "../model/Todos.types.ts";
 import styles from '../TodosCard.module.css';
 
 const TodoCard: React.FC = ({todo}: {todo: Todo}) => {

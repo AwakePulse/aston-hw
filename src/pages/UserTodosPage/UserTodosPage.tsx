@@ -5,9 +5,9 @@ import Loader from "../../shared/ui/Loader/Loader.tsx";
 import styles from './UserTodosPage.module.css';
 import TodoCard from "../../entities/todos/ui/TodoCard.tsx";
 import {withUserDataPage} from "../../shared/lib/hoc/withUserDataPage.tsx";
-import {Post} from "../../entities/post/Post.types.ts";
+import {Post} from "../../entities/post/model/Post.types.ts";
 import AlbumCard from "../../entities/albums/ui/AlbumCard.tsx";
-import {Todo} from "../../entities/todos/Todos.types.ts";
+import {Todo} from "../../entities/todos/model/Todos.types.ts";
 
 // const UserTodosPage = () => {
 //     const { id } = useParams<{id: string}>();

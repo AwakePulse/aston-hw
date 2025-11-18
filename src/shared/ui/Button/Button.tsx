@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
 import styles from './Button.module.css';
 import {ButtonTypes} from "./Button.types.ts";
 
-const Button: React.FC<ButtonTypes> = ({children, onClick}) => {
+const Button = ({children, onClick}: PropsWithChildren<ButtonTypes>) => {
     return (
         <button onClick={onClick} className={styles.my_button}>
             {children}

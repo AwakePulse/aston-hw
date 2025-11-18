@@ -1,4 +1,4 @@
-import {Photo} from "../../entities/photos/Photo.types.ts";
+import {Photo} from "../../entities/photos/model/Photo.types.ts";
 
 export interface PhotosListTypes {
     photos: Photo[];

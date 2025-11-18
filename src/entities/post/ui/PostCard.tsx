@@ -1,11 +1,10 @@
 import React, {useCallback, useState} from 'react';
-import {Post, PostCardProps} from "../Post.types.ts";
+import {Post, PostCardProps} from "../model/Post.types.ts";
 import styles from '../PostCard.module.css';
 import InlineButton from "../../../shared/ui/InlineButtom/InlineButton";
 import CommentList from "../../../widgets/CommentList/ui/CommentList.tsx";
 import {NavLink} from "react-router-dom";
 import {useGetCommentsQuery} from "../../comment/api/commentsApi.ts";
-import Loader from "../../../shared/ui/Loader/Loader.tsx";
 
 const PostCard: React.FC<PostCardProps> = ({post, isOpen, onToggle}: {post: Post}) => {
     const { data: comments, isLoading} = useGetCommentsQuery(

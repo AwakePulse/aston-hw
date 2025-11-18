@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
 
-const PostLengthFilter = ({children, defaultValue, value, onChange}) => {
+const PostLengthFilter = ({children, defaultValue, value, onChange}: PropsWithChildren) => {
     return (
         <select value={value} onChange={event => onChange(event.target.value)}>
             <option disabled value="">{defaultValue}</option>
@@ -9,7 +9,7 @@ const PostLengthFilter = ({children, defaultValue, value, onChange}) => {
     );
 };
 
-PostLengthFilter.Option = ({value, children}) => {
+PostLengthFilter.Option = ({value, children}: PropsWithChildren) => {
     return <option key={value} value={value}>{children}</option>
 }
 
